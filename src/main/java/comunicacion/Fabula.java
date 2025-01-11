@@ -10,7 +10,7 @@ public class Fabula extends Escrito{
         this.interpretacion = interpretacion;
     }
 
-    public String getEnsenanzas() {
+    public String getEnsenanza() {
         return ensenanzas;
     }
 
@@ -24,12 +24,12 @@ public class Fabula extends Escrito{
     }
 
     @Override
-    int palabrasTotales(int palabrasPagina) {
+    public int palabrasTotales(int palabrasPagina) {
         return palabrasPagina * getPaginas();
     }
 
     @Override
-    String interpretacion() {
+    public String interpretacion() {
         return interpretacion;
     }
 

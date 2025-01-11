@@ -28,23 +28,13 @@ public class Alfabeto extends Pictograma{
     }
 
     @Override
-    String interpretacion() {
+    public String interpretacion() {
         return interpretacion;
     }
 
     @Override
     public String toString() {
-        if (letras == null || letras.length == 0) {
-            return "";
-        }
-
-        String strLetras = letras[0];
-
-        for (int i = 1; i < letras.length; i++) {
-            strLetras += ", " + letras[i];
-        }
-
-        return strLetras;
+        return String.join(", ", letras); 
     }
 
 }
